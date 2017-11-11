@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html>
 <title>HTML Tutorial</title>
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$( "img" ).each( function() {
+    	var $img = $( this );
+    	$img.width( $img.width() * .25 );
+	});    
+});
+</script>
+</head>
+
 <body>
 
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
+<h1 align="center">Hi, so you want to make a webpage huh?</h1>
+<p>First go to <a href="https://www.barebones.com/products/bbedit/download.html">https://www.barebones.com/products/bbedit/download.html</a> to download a simple source code editor.</p>
+
+<img src="BBEditDownloadPage.png" alt="BBEdit Download Page"></img>
+
+<p>Click the download button next to the text "Disk Image"</p>
 
 </body>
 </html>
